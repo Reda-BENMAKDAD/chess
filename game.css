@@ -39,6 +39,13 @@ html, body {
     
 }
 
+/*
+    these are the colors that chess.com use for their board
+    #769656
+    #BACA2B
+    #EEEED2
+
+*/
 
 .row:nth-child(odd)>.cell:nth-child(odd) {
     background-color: #769656;
