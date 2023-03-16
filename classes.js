@@ -1,14 +1,11 @@
 
 class Piece {
     constructor (name, color) {
+        this.name = name;
+        this.color = color;
         this.icon = `./icons/${color}-${name}.png`;
     }
 
-    move (x, y) {
-         game[x][y] = this;
-         console.log(choosenCell)
-         game[choosenCell[0]-1][choosenCell[1]-1] = "";
-    }
 
 }
 
@@ -49,11 +46,5 @@ class Pawn extends Piece {
         super("pawn", color);
     }
 
-    canMove (x, y) {
-        if (choosenCell[0] == x && Math.abs(choosenCell[1] - y) == 1) {
-            return true;
-        }
-        return false;
-    }
 }
 
